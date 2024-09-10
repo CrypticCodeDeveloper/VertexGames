@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertex Games | Home</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body class="overflow-x-hidden">
+    <!-- header -->
+    <header class="w-full h-screen relative">
+        <img class="w-full h-full object-cover absolute -z-20" src="./public/images/game-bg.jpg" alt="background-image">
+        <div class="w-full h-full bg-black bg-opacity-40 -z-10 absolute"></div>
+        <!-- navigation bar -->
+        <nav class="p-5 bg-gray-400 flex items-center justify-between bg-opacity-60">
+            <div>
+                <h1 class="text-white text-3xl font-semibold"><a href="#">Vertex Games</a></h1>
+                <p class="text-yellow-300">Building the Future of Gaming</p>
+            </div>
+            <div class="flex gap-7 text-sm text-gray-300 transition-all md:text-lg md:gap-16 max-lg:hidden">
+                <a class="hover:text-white" href="#"> Home </a>
+                <a class="hover:text-white" href="#games"> Our Games </a>
+                <a class="hover:text-white" href="#customer-support"> Customer Support </a>
+            </div>
+            <!-- Mobile Hamburger -->
+            <span class="text-white text-3xl lg:hidden hover:cursor-pointer" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">&#9776;</span>
+            <!--  -->
+            <div class="flex gap-4 max-lg:hidden">
+                <button class="bg-green-400 px-5 py-2 text-white rounded-lg">Log in</button>
+                <button class="bg-yellow-400 px-5 py-2 text-white rounded-lg">Sign up</button>
+            </div>
+        </nav>
+        <!-- nav end -->
+        <!-- Mobile menu -->
+         <div class="w-full min-h-44 flex flex-col align-middle bg-gray-400 bg-opacity-60 border-t-2 border-yellow-500 text-white text-lg pl-8 justify-center gap-5 pb-8 pt-4 absolute hidden lg:hidden" id="mobile-menu"> <!-- hidden and flex is necessary -->
+                <a class="hover:text-white" href="#"> Home </a>
+                <a class="hover:text-white" href="#games"> Our Games </a>
+                <a class="hover:text-white" href="#customer-support"> Customer Support </a>
+
+                <div class="flex gap-10 mt-3">
+                    <button class="bg-green-400 px-5 py-2 text-white rounded-lg w-40">Log in</button>
+                    <button class="bg-yellow-400 px-5 py-2 text-white rounded-lg w-40">Sign up</button>
+                </div>
+         </div>
+         <!-- Mobile menu end -->
+          <!-- header content -->
+        <main class="w-full h-full flex flex-col pl-8 mt-52 max-md:mt-40 max-sm:mt-32">
+            <h1 class="text-white text-3xl font-bold w-4/6 mb-3 max-md:text-2xl">Experience the next level of gaming with cutting-edge technology and futuristic adventures.</h1>
+            <p class="my-4 text-gray-300 text-lg mb-5">Join the revolution in gaming. Explore our latest titles today!</p>
+            <button class="bg-slate-500 px-5 py-2 text-white rounded-xl w-3/12 text-xl">Join us</button>
+        </main>
+    </header>
+    <!--  -->
+    <!-- header end -->
+     <!-- Our Games Section -->
+      <section class="min-h-screen w-full bg-gray-600 flex flex-col align-middle pb-12" id="games">
+        <h1 class="text-white text-4xl font-semibold mt-12 text-center">Our Games</h1>
+        <!-- game cards container -->
+        <div class="flex w-full px-8 gap-12 mt-24 justify-center flex-wrap">
+            <!-- first game card -->
+            <div class="w-5/12 max-w-80 min-w-60">
+                <!-- image -->
+                <div class="h-40 w-full">
+                    <img  class="h-full w-full object-cover" src="./public/images/cod-mobile.jpg" alt="cod-mobile">
+                </div>
+                <!-- content -->
+                 <div class="bg-red-500 min-h-44 p-5 w-full">
+                    <p class="text-lg text-white">Call Of Duty Mobile</p>
+                    <p class="text-sm text-gray-300 mt-4">Every match is a chance to prove your skill, with dynamic gameplay that keeps you on the edge of your seat. Get ready to dominate the battlefield, wherever you are.</p>
+                 </div>
+            </div>
+            <!-- first game card end-->
+            <!-- second game card -->
+            <div class="w-5/12 max-w-80 min-w-60">
+                <!-- image -->
+                <div class="h-40 w-full">
+                    <img  class="h-full w-full object-cover" src="./public/images/luna-snow.jpg" alt="luna-snow">
+                </div>
+                <!-- content -->
+                 <div class="bg-green-500 min-h-44 p-5 w-full">
+                    <p class="text-lg text-white">Luna Snow: Marvel Rivals</p>
+                    <p class="text-sm text-gray-300 mt-4"> Unleash her chill factor in intense battles, where every move is a performance of power and precision. Get ready to shine with Luna Snow as you take on the Marvel universe!</p>
+                 </div>
+            </div>
+            <!-- second game card end-->
+            <!-- third game card -->
+            <div class="w-5/12 max-w-80 min-w-60">
+                <!-- image -->
+                <div class="h-40 w-full">
+                    <img  class="h-full w-full object-cover" src="./public/images/fragpunk.jpg" alt="fragpunk">
+                </div>
+                <!-- content -->
+                 <div class="bg-yellow-500 min-h-44 p-5 w-full">
+                    <p class="text-lg text-white">FragPunk</p>
+                    <p class="text-sm text-gray-300 mt-4">The stakes are high, and the competition is fierce—only the boldest will rise to the top in this adrenaline-fueled shooter. Get ready to frag, punk!</p>
+                 </div>
+            </div>
+            <!-- third game card end-->
+            <!-- fourth game card -->
+            <div class="w-5/12 max-w-80 min-w-60">
+                <!-- image -->
+                <div class="h-40 w-full">
+                    <img  class="h-full object-cover w-full" src="./public/images/black-myth.jpg" alt="black-myth">
+                </div>
+                <!-- content -->
+                 <div class="bg-purple-500 min-h-44 p-5 w-full">
+                    <p class="text-lg text-white">Black Myth</p>
+                    <p class="text-sm text-gray-300 mt-4">Master the art of combat as you take on formidable foes, with stunning visuals and a story that will leave you in awe.</p>
+                 </div>
+            </div>
+            <!-- fourth game card end-->
+        </div>
+      </section>
+      <!-- Customer Support -->
+      <section class="relative w-full min-h-screen pb-12 max-md:pb-12" id="customer-support">
+        <img src="./public/images/contact-bg.jpg" alt="customer-service-bg" class="absolute object-cover w-full h-full -z-20 object-center">
+        <div class="w-full h-full bg-black bg-opacity-40 -z-10 absolute"></div>
+        <h1 class="text-white text-4xl font-semibold pt-12 text-center">Customer Service</h1>
+        <p class="text-center mt-4 text-white text-lg">Don't have a Vertex Account? <a href="#" class="text-gray-200 underline underline-offset-4">create an account</a> </p>
+        <!-- customer service form -->
+         <div class="flex w-full justify-center pt-20 max-md:pb-12">
+            <form class="flex flex-col gap-5 bg-gray-500 py-40 px-40 rounded-lg bg-opacity-50 max-md:px-20 max-sm:px-10" action="">
+                <label for="username">
+                    <input class="bg-transparent border-red-500 border-solid border pl-2 rounded-lg outline-none text-white py-1 w-72" type="text" placeholder="Vertex Username">
+                </label>
+                <label for="email">
+                    <input class="bg-transparent border-yellow-500 border-solid border pl-2 rounded-lg outline-none text-white py-1 w-72" type="text" placeholder="Vertex Email">
+                </label>
+                <textarea name="#" id="#" class="bg-transparent border-green-500 border-solid border pl-2 rounded-lg outline-none text-white py-1 w-72 min-h-40 max-h-44" placeholder="Message">
+                </textarea>
+                <button class="bg-yellow-400 px-5 py-2 mt-4 text-white rounded-lg">Send</button>
+             </form>
+         </div>
+       </section>
+</body>
+</html>
